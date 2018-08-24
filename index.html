@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html>
-<title>This is Chi7777</title>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>一綺喝奶茶🐈</title>
+</head>
+<style>
+html {
+	margin:0;
+	padding: 0;
+	width:100%;
+}
+body {
+	margin:0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	background:url(black-marble.jpg) no-repeat center center;
+	height: 100vh;
+	display: table;
+}
+.wrapper {
+	position:absolute;
+	width: 30%;
+	animation:logomv 4s forwards;
+}
+@keyframes logomv {
+	0%{
+		top:45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	80%{
+		top:45%;
+		left: 50%;
+		transform: translate(-50%,-50%) scale(1);
+	}
+	100%{
+		top:30px;
+		left: 30px;
+		transform: translate(-30%,-30%) scale(0.2);
+
+	}
+}
+
+path {
+	stroke: #FFF;
+	fill:#FFF;
+	stroke-dasharray: 1800;
+	opacity: 10;
+	animation: logo 2s cubic-bezier(0,0.23,1,0.1) forwards;
+}
+@keyframes logo {
+	0%{
+		opacity:0;
+		fill:none;
+		stroke-dashoffset:1800; 
+	}
+	30%{
+		opacity:10;
+		fill: none;
+		stroke-dashoffset:1800; 
+	}
+	90%{
+		fill:rgba(255,255,255,0);
+	}
+	100%{
+		opacity:10;
+		fill: rgba(255,255,255,1);
+		stroke-dashoffset:0; 
+
+	}
+
+}
+</style>
 <body>
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 540 412" style="enable-background:new 0 0 540 412;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M190.5,195c7.5,16.5-0.5,35-10,54.5c-4,7.5-7,15-9,20.5c-3.5,9.5-8,10.5-18,5.5c-9-5.5-17.5-15-17.5-28.5
+		c0-6.5,2.5-16.5,11.5-37c5-10,8.5-19,6.5-21c-6-5-38.5,27.5-58.5,68c-10,20.5-15,41-15,56c0,22,9,35.5,22.5,36
+		c37.5,0.5,72-38,92-68c4.5-7.5,12-9.5,15-1c2.5,6.5,2.5,19.5-6.5,33.5c-19,30-59.5,54.5-98.5,55c-46,0.5-71.5-29-71.5-69
+		c0-18,5-38,15.5-58C74.5,190,114,163,143,163C161.5,163,182.5,180,190.5,195z"/>
+	<path class="st0" d="M316,369c-33,0-48-16.5-48-42.5c0-31.5,24.5-75,43.5-104.5c9.5-16.5,17-28.5,13.5-28.5
+		c-4.5,0-52,31.5-78.5,74.5c-17,28-35,62.5-47,92.5c-4,9-11.5,10.5-17.5,3c-8-9.5-15-21.5-2.5-54.5c20-52.5,119-220,159.5-272
+		c8-10,15.5-8,20,2c2.5,5.5,4,12,4,19c0,13.5-6,32-18,53c-10,16.5-41,63-46,70c15-11,32.5-17,42-17c14.5,0,29,15.5,29,35
+		c0,7-1.5,14-5.5,21c-27.5,49-40,70-45.5,82c-4.5,11-6.5,21.5-6.5,29.5c0,10.5,2.5,17,9.5,17c17.5,0,44-35.5,59-66
+		c3.5-7.5,11.5-8.5,15.5,0c2.5,6,6,17.5-1.5,32.5C380.5,344,348,369,316,369z"/>
+	<path class="st0" d="M415.5,368.5c-30.5,0-44-17.5-44-42.5c0-9.5,2-20,6-33c12.5-35,44.5-93,63-119c7.5-10,13.5-11,20-3.5
+		c9.5,10,13.5,31.5,0.5,56.5c-9.5,21.5-32.5,59-41,79c-4.5,11.5-7,22-7,30s2,12.5,7.5,12.5c20,0,46-33.5,61.5-67.5c4-9,10.5-8,15,1
+		c4.5,8.5,4,21-2.5,34C479.5,347.5,445,368.5,415.5,368.5z M479.5,113.5c14,0,27.5,18,27.5,32.5c0,13.5-7.5,25-20,25
+		c-16,0-29.5-15-29.5-30.5C457.5,126.5,468,113.5,479.5,113.5z"/>
+</g>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="/w3images/photographer.jpg" alt="Me" width="1500" height="600">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
-    <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
-    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
-  </div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-  </div>
-</header>
-
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-
-  <!-- Images (Portfolio) -->
-  <img src="/w3images/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
-  <img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-
-  <!-- Contact -->
-  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-    <h3 class="w3-center">Contact</h3>
-    <hr>
-    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
-
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" required name="Name">
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" required name="Email">
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" required name="Message">
-      </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-    </form><br>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-
-  </div>
-
-<!-- End page content -->
-</div>
-
+</svg>
 </body>
 </html>
-
