@@ -203,8 +203,9 @@
         height: 480px;
         padding:80px;
         color:#FFF;
+        text-shadow: 0 0 3px #000;
         border-radius: 50%;
-        background: #323237;
+        background: rgba(50,50,55,0.8);
         position: relative;
         display: block;
         right: 10vw;
