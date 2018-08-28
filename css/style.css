@@ -199,9 +199,9 @@
     }
 
     .about {
-        width: 40vw;
-        height: 40vw;
-        padding:8vw;
+        width: 480px;
+        height: 480px;
+        padding:80px;
         color:#FFF;
         border-radius: 50%;
         background: #323237;
@@ -219,7 +219,11 @@
             width: 100%;
         }
         .about {
-            display: none;
+            width: 100%;
+            border-radius:0;
+        }
+        #about {
+            height:150%;
         }
         #logo {
             position: relative;
