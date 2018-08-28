@@ -226,6 +226,7 @@
             left: 50%;
             transform: translateX(-50%);
             margin: 15px 0px;
+            cursor:pointer;
         }
         #menu-link {
             display: none;
