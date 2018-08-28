@@ -36,13 +36,6 @@
         color: #f597a5;
     }
 
-    .column {
-        float: left;
-        width: 100%;
-        background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
-        padding: 15px;
-    }
-
     [class*="col-"] {
         float: left;
         padding: 15px;
@@ -204,22 +197,29 @@
         background-color: #999;
         width: 10vw;
     }
-    .about{
-      width:100%;
-      margin-left:40%;
+
+    .about {
+        width: 40vw;
+        height: 40vw;
+        padding:8vw;
+        color:#FFF;
+        border-radius: 50%;
+        background: #323237;
+        position: relative;
+        right: 10vw;
+        top: 10vh;
+        float: right;
     }
-    .about span {
-      background:#000000;
-      color:#FFFFFF;
-      padding:5px 8px;
-      margin:10px 0px;
-      display: inline-block;
-    }
+
+    .about span {}
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
     @media screen and (max-width:600px) {
         [class*="col-"] {
             width: 100%;
+        }
+        .about {
+            display: none;
         }
         #logo {
             position: relative;
