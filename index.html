@@ -8,284 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jq-gotop.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-
-    * {
-        font-family: 'Noto Sans TC';
-        box-sizing: border-box;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    #menu-link {
-        display: block;
-    }
-
-    .topnav {
-        overflow: hidden;
-        background-color: #ffffff;
-    }
-
-    .topnav a {
-        float: left;
-        display: block;
-        color: #323237;
-        text-align: center;
-        padding: 19px 24px;
-        text-decoration: none;
-        transition: all 0.8s ease;
-    }
-
-    .topnav a:hover {
-        color: #f597a5;
-    }
-
-    .column {
-        float: left;
-        width: 100%;
-        background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
-        padding: 15px;
-    }
-
-    [class*="col-"] {
-        float: left;
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
-
-    .row {
-        margin-bottom: 20px;
-        min-height: 70vh;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .footer {
-        background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
-        background-blend-mode: multiply;
-        color: #ffffff;
-        text-align: center;
-        font-size: 12px;
-        padding: 15px;
-    }
-
-    #logo {
-        width: auto;
-        height: 30px;
-        margin: 15px 25px;
-        float: left;
-        display: block;
-    }
-
-    path {
-        stroke: #FFF;
-        fill: #FFF;
-        stroke-dasharray: 1800;
-        opacity: 10;
-        animation: logo 2s cubic-bezier(0, 0.23, 1, 0.1) forwards;
-    }
-
-    @keyframes logo {
-        0% {
-            opacity: 0;
-            fill: none;
-            stroke-dashoffset: 1800;
-        }
-        30% {
-            opacity: 10;
-            fill: none;
-            stroke-dashoffset: 1800;
-        }
-        90% {
-            fill: rgba(000, 000, 000, 0);
-        }
-        100% {
-            opacity: 10;
-            fill: rgba(000, 000, 000, 1);
-            stroke-dashoffset: 0;
-        }
-    }
-
-    div.gallery {
-        border: 1px solid #ccc;
-        overflow: hidden;
-    }
-
-    div.gallery:hover {
-        border: 1px solid #777;
-    }
-
-    div.gallery img {
-        width: 100%;
-        height: auto;
-        transition: all 0.5s ease;
-    }
-
-    div.gallery:hover img {
-        transform: scale(1.2);
-    }
-
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
-
-    h2 {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-    h2:after {
-        display: inline-block;
-        margin: 0 0 8px 20px;
-        height: 2px;
-        content: " ";
-        text-shadow: none;
-        background-color: #999;
-        width: 10vw;
-    }
-
-    h2:before {
-        display: inline-block;
-        margin: 0 20px 8px 0;
-        height: 2px;
-        content: " ";
-        text-shadow: none;
-        background-color: #999;
-        width: 10vw;
-    }
-    .about{
-      width:100%;
-      margin-left:40%;
-    }
-    .about span {
-      background:#000000;
-      color:#FFFFFF;
-      padding:5px 8px;
-      margin:10px 0px;
-      display: inline-block;
-    }
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-    @media screen and (max-width:600px) {
-        [class*="col-"] {
-            width: 100%;
-        }
-        #logo {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: 15px 0px;
-        }
-        #menu-link {
-            display: none;
-            margin-top: 60px;
-        }
-        #menu-link a {
-            float: none;
-            width: 100%;
-        }
-        .menu {
-            display: inline-block;
-            cursor: pointer;
-            position: absolute;
-            left: 20px;
-            top: 15px;
-        }
-
-        .bar1,
-        .bar2,
-        .bar3 {
-            width: 25px;
-            height: 2px;
-            border-radius: 25px;
-            background-color: #333;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-            transform: rotate(-45deg) translate(-6px, 6px);
-        }
-
-        .change .bar2 {
-            opacity: 0;
-        }
-
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-6px, -6px);
-            transform: rotate(45deg) translate(-6px, -6px);
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        #menu-link {
-            display: block;
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -353,19 +76,19 @@
         <h2>文宣海報作品</h2>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/graphic1.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="images/graphic1.jpg" width="600" height="400">
                 <div class="desc">三折頁DM設計</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/tbc.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="images/tbc.jpg" width="600" height="400">
                 <div class="desc">to be continued</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/tbc.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="images/tbc.jpg" width="600" height="400">
                 <div class="desc">to be continued</div>
             </div>
         </div>
@@ -374,22 +97,23 @@
         <h2>網頁設計作品</h2>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web3.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="images/web3.jpg" width="600" height="400">
                 <div class="desc">班級通訊錄-106資管人</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web1.jpg" alt="活動報名頁面" width="600" height="400">
-                <div class="desc">活動報名頁面</div>
+                <img src="images/web4.jpg" width="600" height="400">
+                <div class="desc">抽籤小工具-交換禮物</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web2.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="images/web1.jpg" width="600" height="400">
                 <div class="desc">活動報名頁面</div>
             </div>
         </div>
+        
     </div>
     <div class="footer">
         <p><a href="mailto:chi@cchi.me" style="text-decoration: none;color:#FFF;">Chi Chen</a> © 2018</p>
