@@ -254,6 +254,7 @@
             float: none;
             display: block;
             width: 100%;
+            height: auto;
         }
         .menu {
             display: inline-block;
