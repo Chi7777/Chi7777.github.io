@@ -25,10 +25,10 @@
         function menu(y) {
             y.classList.toggle('change');
             var x = document.getElementById("menu-link");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+            if (x.className === "menu-link") {
+                x.className += " responsive";
             } else {
-                x.style.display = "block";
+                x.className = "menu-link";
             }
 
         }
@@ -58,7 +58,7 @@
     c-16,0-29.5-15-29.5-30.5C434.7,104,445.2,91,456.7,91z" />
             </g>
         </svg>
-        <div id="menu-link">
+        <div id="menu-link" class="menu-link">
             <a href="#graphic">文宣海報</a>
             <a href="#web">網頁設計</a>
             <a href="http://www.cchi.me/blog/">烘焙甜點</a>
@@ -85,19 +85,19 @@
         <h2>文宣海報作品</h2>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/graphic1.jpg" width="600" height="400">
+                <div class="mask"><img src="images/graphic1.jpg" width="600" height="400"></div>
                 <div class="desc">三折頁DM設計</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/graphic2.jpg" width="600" height="400">
+                <div class="mask"><img src="images/graphic2.jpg" width="600" height="400"></div>
                 <div class="desc">專題成果展海報</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/tbc.jpg" width="600" height="400">
+                <div class="mask"><img src="images/tbc.jpg" width="600" height="400"></div>
                 <div class="desc">to be continued</div>
             </div>
         </div>
@@ -106,31 +106,31 @@
         <h2>網頁設計作品</h2>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web3.jpg" width="600" height="400">
+                    <div class="mask"><img src="images/web3.jpg" width="600" height="400"></div>
                 <div class="desc">班級通訊錄-106資管人</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web4.jpg" width="600" height="400">
+                    <div class="mask"><img src="images/web4.jpg" width="600" height="400"></div>
                 <div class="desc">抽籤小工具-交換禮物</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web5.jpg" width="600" height="400">
+                    <div class="mask"><img src="images/web5.jpg" width="600" height="400"></div>
                 <div class="desc">3D列印車牌產生器</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web1.jpg" width="600" height="400">
+                    <div class="mask"><img src="images/web1.jpg" width="600" height="400"></div>
                 <div class="desc">活動報名頁面</div>
             </div>
         </div>
         <div class="col-4">
             <div class="gallery">
-                <img src="images/web2.jpg" width="600" height="400">
+                    <div class="mask"><img src="images/web2.jpg" width="600" height="400"></div>
                 <div class="desc">活動報名頁面</div>
             </div>
         </div>
