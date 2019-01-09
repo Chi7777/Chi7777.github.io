@@ -151,6 +151,7 @@
         border: 1px solid #ccc;
         background: #FFF;
         overflow: hidden;
+        transition: border 1s ease;
     }
 
     div.gallery:hover {
