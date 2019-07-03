@@ -1,27 +1,26 @@
     @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-
     * {
         font-family: 'Noto Sans TC';
         box-sizing: border-box;
     }
-
+    
     html {
         scroll-behavior: smooth;
     }
-
+    
     body {
         margin: 0;
     }
-
+    
     #menu-link {
         display: block;
     }
-
+    
     .topnav {
         overflow: hidden;
         background-color: #ffffff;
     }
-
+    
     .topnav a {
         float: left;
         display: block;
@@ -31,85 +30,85 @@
         text-decoration: none;
         transition: all 0.8s ease;
     }
-
+    
     .topnav a:hover {
         color: #f597a5;
     }
-
+    
     [class*="col-"] {
         float: left;
         padding: 15px;
         margin-bottom: 20px;
     }
-
+    
     .col-1 {
         width: 8.33%;
     }
-
+    
     .col-2 {
         width: 16.66%;
     }
-
+    
     .col-3 {
         width: 25%;
     }
-
+    
     .col-4 {
         width: 33.33%;
     }
-
+    
     .col-5 {
         width: 41.66%;
     }
-
+    
     .col-6 {
         width: 50%;
     }
-
+    
     .col-7 {
         width: 58.33%;
     }
-
+    
     .col-8 {
         width: 66.66%;
     }
-
+    
     .col-9 {
         width: 75%;
     }
-
+    
     .col-10 {
         width: 83.33%;
     }
-
+    
     .col-11 {
         width: 91.66%;
     }
-
+    
     .col-12 {
         width: 100%;
     }
-
+    
     .row {
         margin-bottom: 20px;
         min-height: 70vh;
     }
-
+    
     .row:after {
         content: "";
         display: table;
         clear: both;
     }
-
+    
     .footer {
         background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
         background-blend-mode: multiply;
         color: #ffffff;
         text-align: center;
         font-size: 12px;
-        padding: 15px;
+        padding: 30px;
     }
-
+    
     #logo {
         width: auto;
         height: 30px;
@@ -117,7 +116,7 @@
         float: left;
         display: block;
     }
-
+    
     path {
         stroke: #FFF;
         fill: #FFF;
@@ -125,7 +124,7 @@
         opacity: 10;
         animation: logo 2s cubic-bezier(0, 0.23, 1, 0.1) forwards;
     }
-
+    
     @keyframes logo {
         0% {
             opacity: 0;
@@ -146,44 +145,46 @@
             stroke-dashoffset: 0;
         }
     }
-
+    
     div.gallery {
         border: 1px solid #ccc;
         background: #FFF;
         overflow: hidden;
         transition: border 1s ease;
     }
-
+    
     div.gallery:hover {
         border: 1px solid #777;
     }
+    
     .mask {
         width: 100%;
         max-height: 250px;
         overflow: hidden;
     }
+    
     div.gallery img {
         width: 100%;
         height: auto;
         transition: all 0.5s ease;
     }
-
+    
     div.gallery:hover img {
         transform: scale(1.2);
     }
-
+    
     div.desc {
         padding: 15px;
         text-align: center;
     }
-
+    
     h2 {
         width: 100%;
         margin: 0;
         padding: 0;
         text-align: center;
     }
-
+    
     h2:after {
         display: inline-block;
         margin: 0 0 8px 20px;
@@ -193,7 +194,7 @@
         background-color: #999;
         width: 10vw;
     }
-
+    
     h2:before {
         display: inline-block;
         margin: 0 20px 8px 0;
@@ -203,15 +204,15 @@
         background-color: #999;
         width: 10vw;
     }
-
+    
     .about {
         width: 480px;
         height: 480px;
-        padding:80px;
-        color:#FFF;
+        padding: 80px;
+        color: #FFF;
         text-shadow: 0 0 3px #000;
         border-radius: 50%;
-        background: rgba(50,50,55,0.8);
+        background: rgba(50, 50, 55, 0.8);
         position: relative;
         display: block;
         right: 10vw;
@@ -219,34 +220,35 @@
         float: right;
         overflow: auto;
     }
-
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
+    
     @media screen and (max-width:600px) {
         [class*="col-"] {
             width: 100%;
         }
         .about {
             width: 100%;
-            padding:40px;
-            border-radius:0;
+            padding: 40px;
+            border-radius: 0;
             right: 0;
-            top:0;
-            background: rgba(50,50,55,0.5);
+            top: 0;
+            background: rgba(50, 50, 55, 0.5);
             display: inline-block;
             overflow: hidden;
         }
         #about {
-            height:150vh;
+            height: 150vh;
         }
         #logo {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
             margin: 15px 0px;
-            cursor:pointer;
+            cursor: pointer;
         }
-        .menu-link a {display: none;}
+        .menu-link a {
+            display: none;
+        }
         .menu-link.responsive {
             display: none;
             margin-top: 60px;
@@ -264,7 +266,6 @@
             left: 20px;
             top: 15px;
         }
-
         .bar1,
         .bar2,
         .bar3 {
@@ -275,22 +276,19 @@
             margin: 6px 0;
             transition: 0.4s;
         }
-
         .change .bar1 {
             -webkit-transform: rotate(-45deg) translate(-6px, 6px);
             transform: rotate(-45deg) translate(-6px, 6px);
         }
-
         .change .bar2 {
             opacity: 0;
         }
-
         .change .bar3 {
             -webkit-transform: rotate(45deg) translate(-6px, -6px);
             transform: rotate(45deg) translate(-6px, -6px);
         }
     }
-
+    
     @media only screen and (min-width: 768px) {
         #menu-link {
             display: block;
